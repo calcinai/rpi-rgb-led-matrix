@@ -288,8 +288,8 @@ struct HardwareMapping matrix_hardware_mappings[] = {
     /* This GPIO mapping is made for my driver board
      * board.
      */
-    .output_enable = GPIO_BIT(41),
-    .clock         = GPIO_BIT(40),
+    .output_enable = GPIO_BIT(40),
+    .clock         = GPIO_BIT(41),
     .strobe        = GPIO_BIT(34),
 
     .a             = GPIO_BIT(37),
