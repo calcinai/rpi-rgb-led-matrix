@@ -573,7 +573,7 @@ public:
 #ifdef DISABLE_HARDWARE_PULSES
     return false;
 #else
-    const bool can_handle = gpio_mask==GPIO_BIT(18) || gpio_mask==GPIO_BIT(12);
+    const bool can_handle = gpio_mask==GPIO_BIT(18) || gpio_mask==GPIO_BIT(12) || gpio_mask==GPIO_BIT(40);
     if (can_handle && (s_PWM_registers == NULL || s_CLK_registers == NULL)) {
       // Instead of silently not using the hardware pin pulser and falling back
       // to timing based loops, complain loudly and request the user to make
@@ -629,6 +629,9 @@ public:
     } else if (pins == GPIO_BIT(12)) {
       // set GPIO 12 to PWM0 mode (Alternative 0)
       SetGPIOMode(s_GPIO_registers, 12, 4);
+    } else if (pins == GPIO_BIT(40)) {
+      // set GPIO 40 to PWM0 mode (Alternative 0)
+      SetGPIOMode(s_GPIO_registers, 40, 4);
     } else {
       assert(false); // should've been caught by CanHandle()
     }

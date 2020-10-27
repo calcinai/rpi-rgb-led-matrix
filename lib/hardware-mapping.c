@@ -281,6 +281,63 @@ struct HardwareMapping matrix_hardware_mappings[] = {
     .p5_g2         = GPIO_BIT(44),
     .p5_b2         = GPIO_BIT(45),
   },
+
+  {
+    .name          = "calcinai",
+
+    /* This GPIO mapping is made for my driver board
+     * board.
+     */
+    .output_enable = GPIO_BIT(41),
+    .clock         = GPIO_BIT(40),
+    .strobe        = GPIO_BIT(34),
+
+    .a             = GPIO_BIT(37),
+    .b             = GPIO_BIT(36),
+    .c             = GPIO_BIT(39),
+    .d             = GPIO_BIT(38),
+    .e             = GPIO_BIT(35),
+
+    /* Chain 0 */
+    .p0_r1         = GPIO_BIT(23),
+    .p0_g1         = GPIO_BIT(22),
+    .p0_b1         = GPIO_BIT(24),
+    .p0_r2         = GPIO_BIT(26),
+    .p0_g2         = GPIO_BIT(25),
+    .p0_b2         = GPIO_BIT(27),
+
+    /* Chain 1 */
+    .p1_r1         = GPIO_BIT(17),
+    .p1_g1         = GPIO_BIT(16),
+    .p1_b1         = GPIO_BIT(18),
+    .p1_r2         = GPIO_BIT(20),
+    .p1_g2         = GPIO_BIT(19),
+    .p1_b2         = GPIO_BIT(21),
+
+    /* Chain 2 */
+    .p2_r1         = GPIO_BIT(29),
+    .p2_g1         = GPIO_BIT(28),
+    .p2_b1         = GPIO_BIT(30),
+    .p2_r2         = GPIO_BIT(32),
+    .p2_g2         = GPIO_BIT(31),
+    .p2_b2         = GPIO_BIT(33),
+
+    /* Chain 3 */
+    .p3_r1         = GPIO_BIT(7),
+    .p3_g1         = GPIO_BIT(6),
+    .p3_b1         = GPIO_BIT(8),
+    .p3_r2         = GPIO_BIT(10),
+    .p3_g2         = GPIO_BIT(9),
+    .p3_b2         = GPIO_BIT(11),
+
+    /* Chain 4 */
+    .p4_r1         = GPIO_BIT(1),
+    .p4_g1         = GPIO_BIT(0),
+    .p4_b1         = GPIO_BIT(2),
+    .p4_r2         = GPIO_BIT(4),
+    .p4_g2         = GPIO_BIT(3),
+    .p4_b2         = GPIO_BIT(5),
+  },
 #endif
 
   {0}
