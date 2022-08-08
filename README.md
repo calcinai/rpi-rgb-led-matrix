@@ -22,6 +22,11 @@ The LED-matrix library is (c) Henner Zeller <h.zeller@acm.org>, licensed with
 source and all your modifications available to the receiver of such product so
 that they have the freedom to adapt and improve).
 
+## Discourse discussion group
+
+If you'd like help, please do not file a bug, use the discussion board instead:
+https://rpi-rgb-led-matrix.discourse.group/
+
 Overview
 --------
 The RGB LED matrix panels can be scored at [Sparkfun][sparkfun],
@@ -481,7 +486,8 @@ In general, run a minimal configuration on your Pi.
   * Do not use a graphical user interface (Even though the
     Raspberry Pi foundation makes you believe that you can do that: don't.
     Using a Pi with a GUI is a frustratingly slow use of an otherwise
-    perfectly good embedded device.)
+    perfectly good embedded device.).
+    Always operate your Raspberry Pi [headless].
 
   * Switch off on-board sound (`dtparam=audio=off` in `/boot/config.txt`).
     External USB sound adapters work, and are much better quality anyway,
@@ -788,3 +794,4 @@ things, like this installation by Dirk in Scharbeutz, Germany:
 [Go binding]: https://github.com/mcuadros/go-rpi-rgb-led-matrix
 [Rust binding]: https://crates.io/crates/rpi-led-matrix
 [Nodejs/Typescript binding]: https://github.com/alexeden/rpi-led-matrix
+[headless]: https://www.raspberrypi.com/documentation/computers/configuration.html#setting-up-a-headless-raspberry-pi
